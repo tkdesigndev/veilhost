@@ -1,0 +1,362 @@
+---
+import Layout from "../layouts/Layout.astro";
+import creature from "../assets/veilhost_creature_lurks.png";
+
+const chapters = [
+	{
+		title: "Prologue: Farpoint Outpost",
+		body: [
+			`The sentry guard released a long yawn into the warm night air, stretching his arms in protest towards the unchanging sky. He scanned the distance for signs of life beyond the defensive wall he was stationed atop, knowing it was pointless. Out of habit he checked the mirror at his feet. The image remained the same as ever, a dull reflection of the ground stretching away from the wall flecked with dirt blown in from the cracked plains.`,
+			`Eight months of high alert. In the beginning, a sense of morbid excitement had filled the outpost. Excited chatter around the mess hall. Soldiers actually volunteering for wall duty. Finally something was happening in Matrika. Mysterious invaders would appear on the horizon at any moment. Yet, as the weeks turned into months, it became harder to believe. He longed to see movement reflected back at him in that mirror, or on the horizon, or even on top of the wall. All scouting missions were on hold until it happened. They were stuck here, staring down the throat of the only path an invasion could take.`,
+			`Farpoint was the last Matrikan stronghold before the mountains that separated their lands from those of Nibel. It was the last in a line of five outposts that served as the first line of defence along the Matra Strait, the only passage an army could take to reach the city from the North. It was an impressive structure, built to hold several hundred men for years at a time, but its grey walls were dull when compared to the shining blue-green Caldranite towers of the city.`,
+			`The guard had foolishly believed he would finally see some action by volunteering for a post so close to the border. Especially after the invasion of Nibel. He was always happiest when he was moving. Somewhere. Anywhere. At least in the outposts to the West, beyond the Habbett Rise, there were bandits to keep them busy. The land here was so sparse that there was nothing bigger than a lizard for target practice. He absent-mindedly patted the growing bulk of his belly. Less than ten years ago he graduated top of his training programme where they filled his head with promises of adventure. He had potential. He was going to be somebody. Now he knew it was all hyperbole designed to keep ambitious fools smiling. Out here there was not even the thrill of fighting in the Quadra to encourage him to stay in shape. Nobody dared to challenge the great defensive nation of Matrika besides foolhardy opportunists hoping for some spoils from a quick raid. It was a far cry from the forgotten warriors he read about in the dust-ridden library of the outpost.`,
+			`A staccato humming sound broke his wallowing. The rifle in his lap seemed to be vibrating. The guard lifted it up to eye-level to inspect it and saw that the three small lights on the side were pulsing erratically from their deep recesses. He tapped it a couple of times, then harder once more when the noise persisted. It stopped for a moment before resuming and he sighed with resignation. He hated these things, beamcasters, they called them. Some genius in the city had found a way to store energy in a small rock of Caldranite and release it at a frightening speed. They were more powerful than anything else in their ordnance but they were also entirely unreliable. Every soldier carried something else, just in case. As the increasingly annoying humming sound continued he looked out over the wall again and wondered how much trouble he would be in if he just threw the thing over the side. Then the world froze.`,
+			`The guard involuntarily straightened his back for the first time in weeks, his spine cracking and complaining at the sudden change in posture. His gaze fixed forward in a locked stare. It felt as though his muscles were being pulled around on strings and forced into unfamiliar positions. His eyes became nothing more than a window and his mind began banging against the view as panic bubbled up in his gut. He could only watch as indistinct figures ran vertically up the wall, crested the top of it and dashed by on either side in a blur of white and blue. They moved so quickly it was impossible to count how many there were. It seemed like hundreds. The long-awaited invasion had crept in like a thief in the night and he had failed to see it coming.`,
+			`In front of him a disturbingly thin woman appeared as if from nowhere. She was dressed in dark orange robes that were barely visible in the fading light. They clung tight to her fragile body round her waist and torso but were thick and bunched up around her arms and legs.  Her eyes were a haunting shade of grey and stood out in stark contrast to her pale face. It was as though all the colour of life had been drained from her skin. The bubbling panic swept through the guard's frozen body. He willed his arms to raise his beamcaster but they would not respond. He tried to look anywhere but at the pale woman as she inched closer. There was no urgency to her movement, unlike the figures still dashing past. She moved methodically, with deathly purpose, strands of thin dark hair blowing free from the hood covering her head. When she was just a few steps away the guard saw a murderous smirk spread across her pale lips. He tried to call for help but no sound came. He tried to scream but only a quiet whimper emerged. The pale woman raised a single bony finger to her lips.`,
+			`“Name. Speak.” The woman spoke in an accent unlike any the guard had ever heard. Every word echoed around his head in quiet whispers. He wanted so desperately to shake the sound away.`,
+			`“Solomon.” He replied immediately, against his will. Then he felt his left arm respond, the nerves suddenly tingling into life allowing him to raise his beamcaster a few precious inches towards her stomach. The freedom was fleeting. The pale woman grabbed both his arms with surprising strength and turned him around to face the interior of the compound. When she spoke again Solomon could not determine whether the words were spoken aloud or reserved for his mind alone.`,
+			`“Solo-mon. Watch. Power.”`,
+			`The courtyard below was covered in a haze of blue and white. The blurred figures dashed in and out of the surrounding buildings and deposited startled Matrikan soldiers onto the ground in the centre. In minutes, every single man and woman stationed at the outpost was gathered there. Most of them were still half-asleep. There was not usually anything to stay alert for when you were off duty, or when you were on duty, really. They began to move into a loose circular formation facing outwards towards the blue haze surrounding them. It was not something learned through their training. It was an instinctive movement borne out of a desire to draw closer to your friends and face your enemies. Some of them swiped at the passing figures with their knives. It was too little too late. Not one of them struck a thing. It was like watching a blind man try to attack a whirlpool.`,
+			`“Time now.” The pale woman spoke softly behind Solomon. He tried to turn to look at her but found himself still frozen in place. “Watch”.`,
+			`The figures in the courtyard all stopped at once in response to an unheard command and the blur of movement gave way to a terrifying stillness. They stood in a perfect circle around the outpost soldiers, each several metres apart from the next. The whirling dust began to settle slowly around them. What had looked like hundreds of men was actually less than fifty. They were all pale like the woman holding him but they wore dark blue shorts and long-sleeved shirts made from a loose silky fabric that tightened at the wrists and above their knees. Each of them stood barefoot in the dirt, their only visible armour was strange dark blue bracers on one or both legs. The frightened shouts of the soldiers in the courtyard were replaced by stunned silence as they saw their attackers clearly for the first time. It was the sound of soldiers knowing they were facing death and finding themselves lost for words. It lasted for a long, tense moment until one of the commanding officers from the outpost croaked out an order. “Attack!”.`,
+			`The men barely had time to take a tentative step forward before the massacre began. Solomon watched with horror as the blue-clothed men resumed their impossibly fast circling of the soldiers. Except this time the circle grew tighter and tighter with each rotation until they were within striking distance. They were playing a cruel game with the Matrikans and the rules were simple. Without stopping, the blue-clothed men aimed running punches and sweeping kicks at the helpless soldiers before progressing to vicious strikes with unseen blades. Slithers of red began appearing on the Matrikan soldiers exposed skin and they cried out in frustration`,
+			`Solomon knew every single one of them well. Many were his friends, most were good men and women. None of them deserved this torturous slow death. The circle of blue-robed figures stopped moving as quickly as they started when every Matrikan soldier was lying dead or dying on the floor. Tears streaked down Solomon's face but still he could not move to wipe them away. The pale woman in orange stepped out in front of him and slipped a long, slender knife out from the sleeves of her robes. She looked at Solomon with her fascinating dark, sunken eyes and another horrific smile spread across her face. Suddenly the control over his body vanished and the feeling returned to his muscles in a flood of warmth. The pale woman drew back her knife and he knew he was about to die. Any attempt to defend himself seemed futile so Solomon simply wiped the tears from his face and held his head high. The pale woman stopped and cocked her head to the side as if seeing him for the first time. She reached out with her free hand and brushed the roundness of his gut. Then she wiped a drying tear from his cheek. He felt numb again.`,
+			`“You. Will combine.” She whispered softly around the cave of his mind.`,
+		],
+	},
+	{
+		title: "Chapter One",
+		body: [
+			`Lakh landed heavily on the wide grit road leading up to the Palace and abandoned his Sekaut outside the gates, its Caldranite core still humming beneath the seat. The young Nibel glanced up and squinted against the intense light of the morning. Relentless heat bathed his body in an uncomfortable warmth. Neither distraction deterred him from his purpose. Moving swiftly, barely making a sound, he ran past four startled guards before they had a chance to wake from their standing slumber. Several more were left looking just as bewildered as he negotiated his way through twists and turns, down identical corridors and across halls that felt never-ending. The Palace was unfamiliar to him but the layout and architecture all seemed to point intuitively to his destination. So he just kept on running blindly, hoping the next corner would not lead him right into a guard patrol. The further he went, the bigger and grander the rooms became. Eventually he reached the opulent steps that led up to the throne room and ascended them without facing any resistance. Finally his goal was in sight. That was far too easy.`,
+			`It had been days since he last slept. Fatigue blurred the edges of his vision and most of his remaining energy was devoted to ignoring the familiar pain shooting up his inherited leg. The journey from the outpost should have taken close to eight days but, gripped by a maddening urgency to deliver his message, he made it in less than six. The whole journey was blighted by a punishing and relentless heat from a cloudless sky. They said it was the beginning of the Stress, a drought that could last for weeks.`,
+			`He tried not to look down at the pale grey blotches on his inherited leg. It would normally be covered but only the bare essentials of his military uniform remained, the rest discarded in an effort to keep cool. Even the howling flow of air from the Sekaut’s Caldranite core did little to ease the stifling humidity. Still, Lakh had been determined that his journey would not take a second longer than it needed to. The Capital relied on a network of scouts to deliver messages promptly from the outposts. That was his job and he was going to do it well.`,
+			`He could hear the heavy footfall of the gate guards behind him now, following his progress up the stairs. In his exhausted state they should have been able to catch him, but the position of Palace Guard was occupied by military men who had earned the right to let themselves grow fat. Not that the younger soldiers were in much better physical condition. Only the dedicated few did any more than the minimum amount of training. The King ensured that an assault on his city was a very unattractive proposition. The defences were legendary, despite never being truly tested. In his thirty years of rule King Caldran had turned the entire place into a sprawling fortress, ringed by the great wall constructed from the strange material forged in the Delvari mines that now carried his name. He was widely regarded as a scholar not a fighter, devoting his life to the advancement of the civilisation he oversaw and going to extraordinary lengths to ensure it was protected. This was the man Lakh was in such a rush to find. It was easy for the young scout to pick him out when he burst into the throne room, squirming through the grasp of two guards stationed at the doors.`,
+			`“Your Majesty!” Lakh dropped hurriedly to one knee in front of the large table where King Caldran and several of his closest advisers sat. A thunderbolt of pain shot up his inherited leg and he immediately wished he was thinking straight enough to put his weight on the other one. His words tumbled out at an alarming pace and with an elegant cadence he was surprised to learn he possessed. “Please forgive me this intrusion but I have a message of the utmost importance to deliver.” Nobody spoke at first, they all just stared at him. Some looked confused, others concerned, the rest simply irritated. The guards grabbed him by both arms and started to drag him back through the doors. He found himself too weak to resist. The sprint to the finish had drained what little energy remained in his body. All he could do was watch the King's bemused face fade into the near distance.`,
+			`“Whilst we appreciate your enthusiasm, there is a proper way to deliver a message to The King and it is certainly not by barging into his throne room in your underwear.” One of The King’s advisers finally responded, his tone that of a schoolteacher speaking to a child covered in dirt from playing somewhere it should not. He addressed the two guards with a similar, if slightly more friendly, tone. “Borus, Kayell. Put him down please. ”`,
+			`With a wry smile, King Caldran raised a hand to quiet him and looked at Lakh. “Before you deliver your message young man, please introduce yourself to my Council.”`,
+			`“I... I’m sorry Your Majesty. My name is Lakh. I am a scout currently stationed at Antrak Outpost.” The foolishness of his actions hit Lakh like a beamcaster blast. In his haste he had not stopped to consider the consequences of completely bypassing the standard regulations for delivering a message to The King. The beads of sweat on his forehead from the exertion of his journey were joined by ones prompted by fear. They could lock him away for the rest of his life for this and there would be a few embarrassed guards who would certainly want to. The stunt to get him past the grand Caldranite wall on his Sekaut made a mockery of the proud city defences, even if it did only work because he knew the exact spot to launch from. He bowed his head to avoid eye contact with anybody in the room, suddenly feeling the urge to hide in a dark corner. Instead he was stuck in the middle of a bright room with a dozen pairs of authoritative eyes fixed upon him.`,
+			`“Greetings Lakh.” The King spoke again, his voice calm. “Please tell me why you are delivering this message from Antrak when there are two outposts between there and the city?”`,
+			`Lakh paused, his mouth hung open from the lack of a response to such an obvious question. He really had no reasonable answer. Five outposts, five Scouts. That was and always had been the fastest way to deliver a message to the city. Yet he had ignored the rules and then decided he could make that impossible jump over the wall. All he could say was the first thing that came to mind. “Your Majesty, I believed I could reach you faster than any of the men at Entrick or Guerdon, I’m sorry, it was reckless.” It was an explanation that invited more questions than it answered. Several members of the Council began talking quietly amongst themselves until the King silenced them with little more than a slight lift of his hand. Lakh had seen the King in person dozens of times at speeches and public events and he always exuded a sense of respect and control, but in that subtle motion the scout witnessed the true level of authority their monarch commanded. He had not ruled this nation unchallenged for so long without good reason.`,
+			`“What do you have to tell me, Master Lakh?” The King smiled, raising an amused eyebrow and walking slowly towards him, bidding Lakh to rise to his feet as though he sensed the discomfort the scout was in. He did as instructed and the thunderbolt fired down his crippled leg. He tried to hide the pain behind a blank expression as much as he could manage, though it must be obvious that he was wincing. It wasn't important, the message was all that mattered and finally he could look the King in the eye and deliver it.`,
+			`“Your Majesty. What we feared most is true. They are coming.”`,
+		],
+	},
+	{
+		title: "Chapter Two",
+		body: [
+			`None of the Council members made a sound. Their words had all been taken away by the ones uttered by the scout, sucked into the vacuum his message created and rendered useless. King Caldran sat at the head of the giant table at the centre of the throne room with his fingertips pursed together in a triangle and pressed against his lips. The table was crafted from a single piece of stained black oak and would look more at home in a library, not least for the stacks of books that rested on top and all around the legs. To the back of the room on a plinth raised several feet from the ground stood two extravagant chairs where Kings and Queens once sat. Had the palace staff not maintained a ritualistic cleaning regime, they would have been covered in inches of dust years ago. Like the palace itself they were remnants of Matrika's age of opulence when men were driven by greed and violence was their main currency. He really should have them destroyed, Williem thought, or at least put into the storage rooms with the rest of the historical pieces his father deemed too precious to destroy.`,
+			`Slowly rising and crossing his fingers in a lattice behind his back, he walked slowly around the room and studied the paintings of former Kings and Queens adorning the walls. Like his father, and his father before him, The King had strived to create a peaceful nation and discouraged lavish displays of wealth. With the exception of the palace, Matrik's streets were lined with simple, functional buildings. If the palace was not so big and already home to so many, The King would have destroyed and rebuilt even this place many years ago. His grandfather had done what he could to tone down the opulent interiors. The massive murals and paintings had been covered with plain boards or thick curtains. All of the magnificent blue-green marble statues were removed and stored away, along with a handful of original texts and journals. The King remembered seeing them once in the vaults when he was a child. He was likely the last person to venture down there. The city had existed for thousands of years but this incarnation of it felt new and pure. The only memories of their bloody past were from outlandish stories and legends. The King could remember asking his grandfather why they had simply covered up the artwork in the palace rather than destroying it like everything else. He could still recall the grand old man's response word for word to this day. “We take away this tainted knowledge from the many, so that they may flourish under the guidance of the few, but there will come a time when even those few need to be reminded of the fate that awaits them should they stray from the path.”`,
+			`His grandfather often spoke at length about the path Matrika should take, it was one The King had followed stoically throughout his reign and the reason his people lived within a democratic nation, under the guidance of the elected few. He looked at the variety of books laid out before him on the table, brilliant scientific works, astounding novels and stunning collections of art. All of them were written and created during his time as King. There was no shortage of culture or advancement for his people. They may lack a long-reaching heritage but they were creating new stories, better tales to tell their children. He was immensely proud of his achievements and the nation he now lived in. It pained him to think his home, everything they had built, was now under threat. It was so long since there was even a whisper of a serious invasion that King Caldran had foolishly allowed himself to think it would never happen.`,
+			`He had dismissed Lakh after questioning him for almost an hour. Not just about his message but about everything that was happening on the outer borders of Matrika. It was a rare opportunity for him to speak directly to anybody about life outside of the city. His ongoing neglect of the numerous outposts was one of the biggest regrets of his reign. So much of his time, and his fathers, was devoted to constructing and refining the Capital's great wall that anything else was relegated to a footnote. Ever since the mining folk, the Delvari, had delivered the first pieces of Caldranite to his father they had been obsessed with harnessing its power, first the wall, then engines that powered all manner of vehicles and now their weapons. The city was only ever supposed to be the starting point, the bulb from which a grand flower could blossom. Yet the project that was Matrik seemed never-ending and their borders never grew any wider. King Caldran made a silent vow to change that as he watched the exhausted young Nibel leave the throne room barely able to stand through exhaustion and limping on his obviously injured leg. Their priorities needed to change. As soon as this threat was gone he would make sure they did. He ordered several palace attendants to prepare a room for Lakh and ensure he was comfortable. To the confusion of his advisers, he also ordered the scout to return to him the following day. There was still much more he wanted to know.`,
+			`The message Lakh had delivered was not entirely unexpected. Since the Enarxi invaded the neighbouring Northern kingdom of Nibel a little over a year ago they all knew their next move would be against Matrika. Despite this, little was known about their would-be invaders. They had seemingly come from nowhere with the intention of destroying an entire nation without making any demands or offering any quarter. Reports confirmed they had razed the whole place to the ground, leaving scorched earth and craters where villages used to stand. The name the Matrikan people gave them, the Enarxi, came from an old myth describing a race of powerful monsters who revelled in creating chaos. They certainly seemed to be ruthless in their attacks, but their movements suggested they had a purpose. They were too organised to simply be killing indiscriminately. The King was not fond of the mythical connection, but in the absence of any other explanation the people inevitably turned to legend, however unlikely it may be. Information on their enemy was still frustratingly scarce and unreliable. No Nibel refugees had appeared in Matrika since the attacks and the King's own forces dared not venture close enough for a first-hand report. Instead, stories developed through whispers and hearsay and nestled as exaggerating layers on the already doubtful tales. The only thing everybody could agree on was that it was indeed the Enarxi. Even though that was ridiculous. The King sighed and shook his head gently in disbelief.`,
+			`The decision not to send help or aid to Nibel against these invaders was the hardest of his rule. Centuries ago the two nations had been at war. Much of the detail was destroyed along with the Matrikan histories, only passed down stories of just how violent and devastating it was for the people of Nibel who survived. The King always worried that their neighbours likely retained a much more vivid memory of those times and would one day seek revenge. Yet, an amicable peace existed between them for as long as anybody still living could remember. They left each other alone for the most part, only a few Nibel men and even fewer Nibel women ventured over the borders to settle in Matrika. They were exiles and by all accounts held little love for their homeland, but they were generally known as quiet and respectful people who rarely caused any trouble. So alike in appearance were the two people that only a keen eye could tell them apart once you dressed a Nibel man in Matrikan clothing. It made it easy for them to blend in. Since the invasion Williem had devoted a lot of time to reading what little he could about the Nibel people in a desperate search for any information that might help him escape their fate.`,
+			`His only real solace came in the differences between the two nations. Nibel was a small collection of villages. Matrika was a proud military kingdom. Unfortunately all their focus was on defence, as it always had been. It was not equipped to attack anybody a year ago and certainly could not have gathered a suitable force in the small period of time that it took for Nibel to be overrun. The vast mountain range that lay between the two kingdoms also meant it would take an army months to travel the distance required. Their scouts could travel quickly between outposts on their Sekauts but they had no vehicles suitable for mass-transport. Even if they got there in time, they would be in no physical condition to launch an attack. He shook his head and stretched out his arms above his head. More misplaced priorities. They spent so much time and effort on making the Capital safe and so little on the means to expand away from it. These were the facts the King had repeated to himself countless times in the past year. He believed he had made the right decision for his people, but the guilt he felt at standing by while another kingdom was destroyed ran deep.`,
+			`“Williem. What should we do?” The King was brought out of his thoughts by Adelpha’s question. She was one of the few people in Matrika who took him seriously when he said he wished to be addressed by his first name. Most of his advisers remained stubbornly formal.`,
+			`“We have seen what those things did to Nibel, your majesty, there is no chance our army could stand up to them.” Carolos, his Chief Military Commander, spoke before the King could reply. He was a short, lean man who, whilst not unattractive, had a sneering expression that made people instantly dislike him. His long blonde hair was swept back onto his head and he had a habit of running his fingers through it after he spoke, as he did now, making it look forever greasy and unwashed.`,
+			`“And whose fault is that Carolos?” Adelpha snapped at him. “Your army is a joke, all they do is hide behind those walls.”`,
+			`“How exactly am I supposed to motivate men to train when there has been no war for more than a hundred years? What would you have them shoot at?” The two advisers glared at each other, a hatred and distrust that had festered since The King opted not to support Nibel. Adelpha had wished to go to their aid, Carolos agreed with The King.`,
+			`“We need to call for aid from the armies to the West.” Carolos offered, almost apologetically.`,
+			`“The same armies that covet our lands and would murder us all without a second thought? The same armies Williem and his father spent years ensuring we are isolated from? Your great ideas know no bounds.” Adelpha snapped back again, gesticulating wildly with her hands as she spoke.`,
+			`“They can help us. We need the manpower.” Carolos' voice remained quiet.`,
+			`“Oh great! Let's just let thousands of armed Habbettans into the city, see how that works out.”`,
+			`“They are not savages.”`,
+			`“They are certainly not friends!”`,
+			`“But they can be allies, as can those in the mines.”`,
+			`“This again! You are ridiculous Carolos. Tell me again how are you in charge of anything?”`,
+			`“Stop it. Both of you.” The King spoke with the authority of a father disciplining petulant children. “We are here to discuss matters, not squabble and throw blame around. Let us look at the facts, yes?” He paused for a moment and shuffled some unrelated papers around on the table. “We can safely assume that the Enarxi will not wish to negotiate anything other than our surrender. Knowing what they did to the people of Nibel, that is not an option.” Everybody around the table nodded in solemn agreement. “Our army is now plentiful after the recruitment drive over the past year but it lacks combat experience. With the aid of our defences we could hold out for a time... but the evident ferocity of our enemy suggests that we would eventually be overwhelmed.” The King paused, waiting for the inevitable comment from Adelpha. She rolled her eyes and muttered a reply. “And the negatives?”`,
+			`“I’m glad you asked, Lady Adelpha.” A broad grin spread across his face as he bowed slightly in her direction. He addressed her formally simply because he knew she hated it. “On the positive side we have the beamcasters. They make any soldier worth five, I’m told. We will increase production immediately and we will fast track the more… experimental weapons. Also, it should take months for an invading force to cross the Matra Strait, they cannot go around it, not in numbers, this is precisely why we built those outposts, yes? Porthos, I need you to position your spies at every possible emergence point from the Nibel Mountains, we need to know more about our enemy. I want as many eyes on the ground as we can muster. Carolos, we will continue the recruitment drive but conscription is a last resort, try drafting in some of those odd folk that work the mines to bolster our ranks…”`,
+			`“The Delvari.” Carolos interrupted.`,
+			`“The what?”`,
+			`“The ‘odd folk that work the mines’. We are called the Delvari. We are the reason your wall still stands and your beamcasters fire.”`,
+			`“Yes? Right, yes, I forget you came from the mines. Of course I know what they are called. Do you think we can recruit some of them?”`,
+			`“Unlikely, you’re yet to fully convince me that fighting for you is a good idea.”`,
+			`“...yes, what?” The King stood up at the table and glared down at the head of his armies. “How many times Carolos? I do not understand your jokes and I do not appreciate them. All this time and effort I spend to add the Veilhost to your ranks and all you can do is complain!”`,
+			`Nobody said a word. The mention of the Veilhost would have been met with laughter if it came from anybody but the King. They had never been mentioned at a Council meeting before. Adelpha broke the silence again.`,
+			`“Are you serious?” She was the only one who could speak to him so bluntly. Though almost fifteen years his junior, their romance was a poorly hidden secret.`,
+			`“Deadly serious. Despite everyone in this room ignoring the Veilhost like they are some sort of figment of my imagination, I have personally continued to study them and fund research into their existence and development. My pet project, yes, if you will.” A smile appeared on the corner of his lips, it felt good to talk about this at last, despite the circumstances.`,
+			`“So you are going to save us with super-soldiers? Send heroes from children’s stories into battle alongside my men? Aren't we supposed to vote on these things?” Carolos said, waving a dismissive hand towards the King and running the fingers of the other hand back through his hair.`,
+			`The King ignored his disrespect. “I do not know if they can save us, Carolos, but I have seen with my own eyes the things these young men and women can do. I urge you to do the same. History shows them to be extraordinary and a beacon of light in dark times.”`,
+			`“It’s not history Will, it’s legends, myths, bedtime stories.” Adelpha exclaimed.`,
+			`“And are the Enarxi any different?” The King replied calmly. “We are desperately afraid of the rumoured enemy but we won't put our faith in the heroes of legend?”`,
+			`“If these Veilhost are such valuable soldiers, why have you not already given them to me?” Carolos asked.`,
+			`“Their talents require nurturing, special training… isolation.” Excitement crept into the King's voice. “Many of them were your soldiers...”`,
+			`“You've been taking soldiers out of my army?” The rage in Carolos' voice was growing.`,
+			`“I believe in the Veilhost, Your Majesty.” Mosheh spoke for the first time. He was a slight man of advanced years, his dark choice of clothing always mirrored by the black rings under his eyes and the permanent stain of day-old stubble on his chin. His role on the Council was to advise on religious matters, which meant he rarely had much to say as very few people in Matrika still retained a religious affinity with any level of seriousness. The old faiths had faded away over time as the grandiose symbols of gods and saints were gradually removed from the city. In their place, the King encouraged a belief system that looked inwards rather than upwards.`,
+			`All eyes turned to Mosheh and he slunk back into his chair under their weight. He had hoped to keep this conversation at bay until they had some firm evidence of what the Veilhost could do but the message forced his hand.`,
+			`“There is no point in hiding anything more from my Council than I already have.” He cast a sweeping glance over them all, the men and women he entrusted to help him run Matrika. Why had he kept this from them for so long? “These brave men and women show incredible potential, they are faster and stronger than any other Matrikan. Mosheh has been personally responsible for recruiting all of the current Veilhost recruits, if anything his enthusiasm for the project outstrips my own and he is also Veilhost himself, a Seeker, to be more precise.”`,
+			`Mosheh sank further back into his chair to the point where he almost became a part of it. The rest of the Council looked at him, then at each other, then The King, confusion written all over their faces. Of course, Adelpha was the first to speak, asking all their questions in one breath. “What in the world is a Seeker, where are you hiding all these people, who is paying for all of this and since when did Mosheh do anything?”`,
+			`“I will explain the intricacies of the Veilhost training programme at a later date. Time should not be wasted now on subjects that my Council should all have been paying attention to.” The King regretted the words as he uttered them; he had just guaranteed himself a lengthy argument with Adelpha that evening. “What we must now do is make a straight-forward decision. Our nation must make preparations to defend itself against the impending threat. Dasheh, order Caldranite production in the mines to be stepped up immediately, we will need to repair and reinforce any weak spots in the walls and our soldiers will need as many beamcasters as we can get our hands on…”`,
+			`Williem caught Dasheh smirking and cast him a questioning glare. The man’s expression hurriedly became more serious and he straightened in his seat.`,
+			`“Sir, the Delvari don’t take orders, we get what we get.”`,
+			`“Well, yes of course, I know that.” He lied. The King had distanced himself from the people in the mines ever since they embarrassed him in front of the whole Council. “I mean make sure it reaches our engineers as fast as possible.”`,
+			`“Yes, sir.” Dasheh shrunk back into his seat.`,
+			`“Carolos, prepare our army as best you can. If you need more bodies, tell us, yes, but we will avoid conscription for as long as possible. Myself and Mosheh, as Chief Seeker, will continue to prepare the Veilhost as your secret weapon, whether you want them or not.”`,
+		],
+	},
+];
+---
+
+<Layout title="Read The First 3 Chapters | The Veilhost Trilogy">
+	<section class="chapters-hero">
+		<div class="page-shell">
+			<p class="kicker">Preview</p>
+			<h1>Read The First 3 Chapters</h1>
+		</div>
+	</section>
+
+	<section class="reader page-shell" data-chapter-reader>
+		<div class="reader-bg">
+			<img src={creature.src} alt="" loading="lazy" />
+		</div>
+		<nav class="reader-nav reader-nav-top" aria-label="Chapter pagination">
+			<a class="pager-link" href="?chapter=1" data-page-direction="previous" hidden>Previous</a>
+			<span class="chapter-count" data-chapter-count>Chapter 1 of {chapters.length}</span>
+			<a class="pager-link" href="?chapter=2" data-page-direction="next">Next</a>
+		</nav>
+		<div class="chapter-list">
+			{
+				chapters.map((chapter, index) => (
+					<article class="chapter" data-chapter-index={index} hidden={index !== 0}>
+						<h2>{chapter.title}</h2>
+						{chapter.body.map((paragraph) => (
+							<p>{paragraph}</p>
+						))}
+					</article>
+				))
+			}
+		</div>
+		<nav class="reader-nav reader-nav-bottom" aria-label="Chapter pagination">
+			<a class="pager-link" href="?chapter=1" data-page-direction="previous" hidden>Previous</a>
+			<span class="chapter-count" data-chapter-count>Chapter 1 of {chapters.length}</span>
+			<a class="pager-link" href="?chapter=2" data-page-direction="next">Next</a>
+		</nav>
+	</section>
+</Layout>
+
+<script define:vars={{ totalChapters: chapters.length }}>
+	const reader = document.querySelector("[data-chapter-reader]");
+
+	if (reader) {
+		const chapters = [...reader.querySelectorAll("[data-chapter-index]")];
+		const counts = [...reader.querySelectorAll("[data-chapter-count]")];
+		const previousLinks = [
+			...reader.querySelectorAll('[data-page-direction="previous"]'),
+		];
+		const nextLinks = [...reader.querySelectorAll('[data-page-direction="next"]')];
+
+		const getChapterFromUrl = () => {
+			const params = new URLSearchParams(window.location.search);
+			const requestedChapter = Number(params.get("chapter"));
+
+			if (!Number.isInteger(requestedChapter)) {
+				return 1;
+			}
+
+			return Math.min(Math.max(requestedChapter, 1), totalChapters);
+		};
+
+		const chapterHref = (chapterNumber) => `?chapter=${chapterNumber}`;
+
+		const setChapter = (
+			chapterNumber,
+			shouldUpdateUrl = true,
+			shouldScroll = true,
+		) => {
+			chapters.forEach((chapter, index) => {
+				chapter.hidden = index !== chapterNumber - 1;
+			});
+
+			counts.forEach((count) => {
+				count.textContent = `Chapter ${chapterNumber} of ${totalChapters}`;
+			});
+
+			previousLinks.forEach((link) => {
+				const previousChapter = chapterNumber - 1;
+				link.hidden = previousChapter < 1;
+				link.href = chapterHref(Math.max(previousChapter, 1));
+			});
+
+			nextLinks.forEach((link) => {
+				const nextChapter = chapterNumber + 1;
+				link.hidden = nextChapter > totalChapters;
+				link.href = chapterHref(Math.min(nextChapter, totalChapters));
+			});
+
+			if (shouldUpdateUrl) {
+				const url = new URL(window.location.href);
+				url.searchParams.set("chapter", String(chapterNumber));
+				window.history.pushState({ chapterNumber }, "", url);
+			}
+
+			if (shouldScroll) {
+				reader.scrollIntoView({ behavior: "smooth", block: "start" });
+			}
+		};
+
+		[...previousLinks, ...nextLinks].forEach((link) => {
+			link.addEventListener("click", (event) => {
+				event.preventDefault();
+				const params = new URLSearchParams(link.search);
+				setChapter(Number(params.get("chapter")), true);
+			});
+		});
+
+		window.addEventListener("popstate", () => {
+			setChapter(getChapterFromUrl(), false, false);
+		});
+
+		setChapter(getChapterFromUrl(), false, false);
+	}
+</script>
+
+<style>
+	.chapters-hero {
+		padding: clamp(2.5rem, 7vw, 5rem) 0;
+		background: var(--color-black);
+		color: var(--color-white);
+		text-align: center;
+	}
+
+	.kicker {
+		margin-bottom: 2rem;
+		font-size: 0.78rem;
+		font-weight: 800;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		margin-bottom: 0;
+		font-size: clamp(4rem, 12vw, 9rem);
+	}
+
+	.reader {
+		position: relative;
+		padding: clamp(2rem, 6vw, 5rem) 0;
+	}
+
+	.reader-bg {
+		position: absolute;
+		inset: 3rem auto auto 0;
+		width: min(340px, 42vw);
+		opacity: 0.16;
+		pointer-events: none;
+	}
+
+	.chapter-list {
+		position: relative;
+		z-index: 1;
+		display: grid;
+		gap: 1.25rem;
+		max-width: 840px;
+		margin-inline: auto;
+	}
+
+	.reader-nav {
+		position: relative;
+		z-index: 1;
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+		align-items: center;
+		gap: 1rem;
+		max-width: 840px;
+		margin-inline: auto;
+	}
+
+	.reader-nav-top {
+		margin-bottom: 1.25rem;
+	}
+
+	.reader-nav-bottom {
+		margin-top: 1.25rem;
+	}
+
+	.pager-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 2.7rem;
+		border: 2px solid var(--color-black);
+		background: var(--color-black);
+		padding: 0.65rem 1rem;
+		color: var(--color-white);
+		font-size: 0.82rem;
+		font-weight: 800;
+		line-height: 1;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition:
+			background-color 180ms ease,
+			color 180ms ease,
+			transform 180ms ease,
+			box-shadow 180ms ease;
+	}
+
+	.pager-link:hover {
+		background: var(--color-white);
+		color: var(--color-black);
+		box-shadow: 5px 5px 0 var(--color-black);
+		transform: translate(-2px, -2px);
+	}
+
+	.pager-link[hidden] {
+		visibility: hidden;
+	}
+
+	.pager-link[data-page-direction="previous"] {
+		justify-self: start;
+	}
+
+	.pager-link[data-page-direction="next"] {
+		justify-self: end;
+	}
+
+	.chapter-count {
+		background: rgba(255, 250, 242, 0.78);
+		border: 2px solid var(--color-black);
+		padding: 0.45rem 0.75rem;
+		font-size: 0.78rem;
+		font-weight: 800;
+		line-height: 1;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.chapter {
+		background: var(--color-white);
+		padding: clamp(1.25rem, 2vw, 2.5rem);
+		box-shadow: 8px 8px 0 var(--color-black);
+	}
+
+	.chapter[hidden] {
+		display: none;
+	}
+
+	.chapter h2 {
+		margin-bottom: 1rem;
+		font-size: clamp(2.5rem, 4vw, 4.5rem);
+	}
+
+	.chapter p {
+		font-size: 1.05rem;
+	}
+
+	.chapter p:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (max-width: 640px) {
+		.reader-nav {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.chapter-count {
+			grid-column: 1 / -1;
+			grid-row: 1;
+		}
+
+		.pager-link {
+			width: 100%;
+		}
+	}
+</style>
