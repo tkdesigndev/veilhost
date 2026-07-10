@@ -6,7 +6,7 @@ const redirectTo = (request, path) => {
 };
 
 export async function onRequestPost({ request, env }) {
-	const db = env.SUBSCRIBERS_DB;
+	const db = env.SUBSCRIBERS_DB ?? env.subscribers_db;
 
 	if (!db) {
 		return new Response("Subscription database is not configured.", {
