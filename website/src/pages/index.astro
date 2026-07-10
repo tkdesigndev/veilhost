@@ -12,12 +12,21 @@ import creature from "../assets/veilhost_creature_lurks.png";
 				<h1>The Creatures Lurk</h1>
 				<p class="byline">By Topher Knowles</p>
 				<p class="coming-soon">Coming soon</p>
-				<form class="subscribe-form" action="#" method="post">
+				<form class="subscribe-form" action="/api/subscribe" method="post">
 					<label for="email">Subscribe for updates</label>
 					<div class="form-row">
 						<input id="email" name="email" type="email" placeholder="you@example.com" required />
 						<button type="submit">Notify me</button>
 					</div>
+					<label class="subscribe-trap" for="website">Website</label>
+					<input
+						class="subscribe-trap"
+						id="website"
+						name="website"
+						type="text"
+						tabindex="-1"
+						autocomplete="off"
+					/>
 				</form>
 			</div>
 			<div class="cover-stage" aria-label="Featured book cover">
@@ -108,6 +117,14 @@ import creature from "../assets/veilhost_creature_lurks.png";
 
 	.subscribe-form {
 		max-width: 520px;
+	}
+
+	.subscribe-trap {
+		position: absolute;
+		left: -9999px;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
 	}
 
 	.subscribe-form label {

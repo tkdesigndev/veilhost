@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Subscribed | The Veilhost Trilogy">
+	<section class="subscribed page-shell">
+		<div class="subscribed-copy">
+			<p class="kicker">Subscribed</p>
+			<h1>Thank you</h1>
+			<p>
+				You are on the list for updates about The Veilhost Trilogy.
+			</p>
+			<a class="btn" href="/">Back to home</a>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.subscribed {
+		display: grid;
+		place-items: center;
+		min-height: 58vh;
+		padding: clamp(3rem, 8vw, 6rem) 0;
+	}
+
+	.subscribed-copy {
+		max-width: 720px;
+		background: var(--color-white);
+		padding: clamp(1.4rem, 4vw, 3rem);
+		box-shadow: 12px 12px 0 var(--color-black);
+		text-align: center;
+	}
+
+	.kicker {
+		margin-bottom: 2rem;
+		font-size: 0.78rem;
+		font-weight: 800;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		margin-bottom: 1rem;
+		font-size: clamp(4rem, 12vw, 8rem);
+	}
+
+	p {
+		margin-bottom: 1.5rem;
+	}
+</style>
