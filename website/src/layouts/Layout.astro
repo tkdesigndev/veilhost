@@ -13,7 +13,7 @@ const links = [
 	{ href: "/", label: "Home" },
 	{ href: "/about/", label: "About the author" },
 	{ href: "/chapters/", label: "Read chapters" },
-	{ href: "#buy-now", label: "Buy now" },
+	{ href: "/buy-now/", label: "Buy now" },
 ];
 ---
 
@@ -40,7 +40,7 @@ const links = [
 							href={link.href}
 							class:list={[
 								"nav-link",
-								link.href !== "#buy-now" && path === link.href ? "is-active" : "",
+								path === link.href ? "is-active" : "",
 							]}
 						>
 							{link.label}
