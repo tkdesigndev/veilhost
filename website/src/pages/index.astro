@@ -12,11 +12,13 @@ import creature from "../assets/veilhost_creature_lurks.png";
 				<h1>The Creatures Lurk</h1>
 				<p class="byline">By Topher Knowles</p>
 				<p class="coming-soon">Available on Kindle and in Paperback 31st July</p>
+				<p><a class="btn btn-orange" href="https://www.amazon.co.uk/dp/B0H9BNDGXD?spcref=PUBLISHED_PREORDER_LIVE" target="_blank">Pre-order Kindle Edition</a></p>
+				<br><br><br>
 				<form class="subscribe-form" action="/api/subscribe" method="post">
-					<label for="email">Subscribe for updates</label>
+					<label for="email">Subscribe for updates from the author</label>
 					<div class="form-row">
 						<input id="email" name="email" type="email" placeholder="you@example.com" required />
-						<button type="submit">Notify me</button>
+						<button type="submit">Sign me up</button>
 					</div>
 					<label class="subscribe-trap" for="website">Website</label>
 					<input
@@ -76,7 +78,6 @@ import creature from "../assets/veilhost_creature_lurks.png";
 		z-index: 1;
 		display: grid;
 		grid-template-columns: minmax(0, 0.95fr) minmax(280px, 1.05fr);
-		align-items: center;
 		gap: clamp(2rem, 6vw, 5rem);
 	}
 
@@ -172,6 +173,7 @@ import creature from "../assets/veilhost_creature_lurks.png";
 		position: relative;
 		isolation: isolate;
 		animation: cover-rise 800ms ease both;
+		padding-top: 3em;
 	}
 
 	.cover-stage::before {

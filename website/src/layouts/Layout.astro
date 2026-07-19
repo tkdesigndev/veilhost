@@ -1,5 +1,7 @@
 ---
 import { Font } from "astro:assets";
+import faviconIco from "../assets/favicon.ico?url";
+import favicon from "../assets/favicon.svg";
 import logo from "../assets/tvh-logo.png";
 
 interface Props {
@@ -22,8 +24,8 @@ const links = [
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href={favicon.src} />
+		<link rel="icon" href={faviconIco} sizes="any" />
 		<meta name="generator" content={Astro.generator} />
 		<Font cssVariable="--font-rusty-attack" preload />
 		<title>{title}</title>
@@ -275,6 +277,10 @@ const links = [
 			color 180ms ease,
 			transform 180ms ease,
 			box-shadow 180ms ease;
+	}
+
+	.btn-orange {
+		background-color: var(--color-ember);
 	}
 
 	.btn:hover {
