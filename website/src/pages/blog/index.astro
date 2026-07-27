@@ -1,0 +1,152 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+const posts = (await getCollection("blog", ({ data }) => !data.draft)).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const formatDate = (date: Date) =>
+	new Intl.DateTimeFormat("en-GB", {
+		day: "numeric",
+		month: "long",
+		year: "numeric",
+	}).format(date);
+---
+
+<Layout title="Blog | The Veilhost Trilogy">
+	<section class="blog-hero">
+		<div class="page-shell">
+			<p class="kicker">Notes from the author</p>
+			<h1>Blog</h1>
+			<p>Updates, launch notes, and fragments from the world of The Veilhost Trilogy.</p>
+		</div>
+	</section>
+
+	<section class="blog-list page-shell" aria-label="Blog posts">
+		{
+			posts.length === 0 && (
+				<p class="empty-state">
+					No posts found. Add Markdown files to <code>src/content/blog</code>.
+				</p>
+			)
+		}
+		{
+			posts.map((post) => (
+				<article class="post-card">
+					<p class="post-date">{formatDate(post.data.pubDate)}</p>
+					<h2>
+						<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+					</h2>
+					<p>{post.data.description}</p>
+					{
+						post.data.tags.length > 0 && (
+							<ul class="tag-list" aria-label="Post tags">
+								{post.data.tags.map((tag) => (
+									<li>{tag}</li>
+								))}
+							</ul>
+						)
+					}
+					<a class="read-link" href={`/blog/${post.id}/`}>Read post</a>
+				</article>
+			))
+		}
+	</section>
+</Layout>
+
+<style>
+	.blog-hero {
+		padding: clamp(3rem, 8vw, 6rem) 0 clamp(2rem, 5vw, 3.5rem);
+		background: linear-gradient(180deg, rgba(8, 7, 5, 0.96), rgba(8, 7, 5, 0.78));
+		color: var(--color-white);
+		text-align: center;
+	}
+
+	.kicker {
+		margin-bottom: 1.2rem;
+		font-size: 0.78rem;
+		font-weight: 800;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+
+	h1 {
+		margin-bottom: 1rem;
+		font-size: clamp(4.5rem, 12vw, 9rem);
+	}
+
+	.blog-hero p:last-child {
+		max-width: 680px;
+		margin: 0 auto;
+		font-size: clamp(1rem, 2.4vw, 1.25rem);
+		font-weight: 700;
+	}
+
+	.blog-list {
+		display: grid;
+		gap: clamp(1.25rem, 3vw, 2rem);
+		padding: clamp(3rem, 8vw, 6rem) 0;
+	}
+
+	.post-card {
+		border: 3px solid var(--color-black);
+		background: var(--color-white);
+		padding: clamp(1.35rem, 4vw, 2.25rem);
+		box-shadow: 12px 12px 0 var(--color-black);
+	}
+
+	.empty-state {
+		border: 3px solid var(--color-black);
+		background: var(--color-white);
+		padding: clamp(1.35rem, 4vw, 2.25rem);
+		box-shadow: 12px 12px 0 var(--color-black);
+		font-weight: 900;
+	}
+
+	.post-date {
+		margin-bottom: 0.75rem;
+		font-size: 0.8rem;
+		font-weight: 900;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		margin-bottom: 0.75rem;
+		font-size: clamp(2.4rem, 6vw, 5rem);
+	}
+
+	h2 a,
+	.read-link {
+		text-decoration: none;
+	}
+
+	h2 a:hover,
+	.read-link:hover {
+		color: var(--color-ember);
+	}
+
+	.tag-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.45rem;
+		margin: 1.1rem 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.tag-list li {
+		border: 2px solid var(--color-black);
+		padding: 0.25rem 0.5rem;
+		font-size: 0.75rem;
+		font-weight: 900;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+
+	.read-link {
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+</style>
